@@ -12,6 +12,7 @@ interface Program {
   description: string;
   size: string;
   icon: string;
+  downloadUrl?: string;
 }
 
 const programs: Program[] = [
@@ -72,9 +73,50 @@ const programs: Program[] = [
   { id: 46, name: 'Diablo 2', version: '1.14d', category: 'Игры', description: 'Классическая hack and slash', size: '2.5 ГБ', icon: '⚡' },
   { id: 47, name: 'Age of Empires II', version: 'HD', category: 'Игры', description: 'Историческая стратегия', size: '700 МБ', icon: '🏛️' },
   { id: 48, name: 'Minecraft', version: '1.5.2', category: 'Игры', description: 'Песочница с кубическим миром', size: '150 МБ', icon: '⛏️' },
+  { id: 49, name: 'StarCraft: Brood War', version: '1.16.1', category: 'Игры', description: 'Космическая стратегия', size: '650 МБ', icon: '🚀' },
+  { id: 50, name: 'Call of Duty 2', version: '1.3', category: 'Игры', description: 'Шутер времен Второй мировой', size: '4.2 ГБ', icon: '🎖️' },
+  { id: 51, name: 'Gothic 2', version: '2.7', category: 'Игры', description: 'Ролевая игра в средневековом мире', size: '1.8 ГБ', icon: '🗡️' },
+  { id: 52, name: 'Fallout 2', version: '1.02', category: 'Игры', description: 'Постапокалиптическая RPG', size: '650 МБ', icon: '☢️' },
+  { id: 53, name: 'Max Payne 2', version: '1.0', category: 'Игры', description: 'Нуар-экшен с bullet time', size: '1.5 ГБ', icon: '🕵️' },
+  { id: 54, name: 'Civilization IV', version: '3.19', category: 'Игры', description: 'Глобальная пошаговая стратегия', size: '2.8 ГБ', icon: '🌍' },
+  { id: 55, name: 'Portal', version: '1.0', category: 'Игры', description: 'Головоломка от Valve', size: '2.2 ГБ', icon: '🔵' },
+  { id: 56, name: 'Serious Sam', version: '2.0', category: 'Игры', description: 'Безумный шутер с толпами врагов', size: '1.3 ГБ', icon: '💥' },
+  
+  { id: 57, name: 'Nero Burning ROM', version: '7.11', category: 'Утилиты', description: 'Запись CD и DVD дисков', size: '85 МБ', icon: '💿' },
+  { id: 58, name: 'Alcohol 120%', version: '2.0.3', category: 'Утилиты', description: 'Создание образов дисков', size: '12 МБ', icon: '🔥' },
+  { id: 59, name: 'Partition Magic', version: '8.0', category: 'Утилиты', description: 'Управление разделами диска', size: '35 МБ', icon: '💽' },
+  { id: 60, name: 'Acronis True Image', version: '2014', category: 'Утилиты', description: 'Резервное копирование системы', size: '140 МБ', icon: '💾' },
+  
+  { id: 61, name: 'Corel Draw', version: 'X3', category: 'Графика', description: 'Векторная графика', size: '450 МБ', icon: '✏️' },
+  { id: 62, name: 'Inkscape', version: '0.92', category: 'Графика', description: 'Бесплатный редактор векторной графики', size: '75 МБ', icon: '🖊️' },
+  { id: 63, name: 'Blender', version: '2.49', category: 'Графика', description: '3D моделирование и анимация', size: '28 МБ', icon: '🎬' },
+  
+  { id: 64, name: 'Total Commander', version: '9.22', category: 'Файловые менеджеры', description: 'Двухпанельный файловый менеджер', size: '6 МБ', icon: '📂' },
+  { id: 65, name: 'Far Manager', version: '3.0', category: 'Файловые менеджеры', description: 'Консольный файловый менеджер', size: '5 МБ', icon: '⌨️' },
+  
+  { id: 66, name: 'Maxthon', version: '3.5.2', category: 'Браузеры', description: 'Браузер с облачной синхронизацией', size: '32 МБ', icon: '☁️' },
+  { id: 67, name: 'K-Meleon', version: '76.3', category: 'Браузеры', description: 'Легкий браузер на движке Gecko', size: '15 МБ', icon: '🦎' },
+  
+  { id: 68, name: 'BSPlayer', version: '2.68', category: 'Мультимедиа', description: 'Легкий видеоплеер', size: '9 МБ', icon: '🎥' },
+  { id: 69, name: 'Foobar2000', version: '1.3.17', category: 'Мультимедиа', description: 'Продвинутый аудиоплеер', size: '4 МБ', icon: '🎼' },
+  { id: 70, name: 'K-Lite Codec Pack', version: '12.7.5', category: 'Мультимедиа', description: 'Набор кодеков для видео', size: '35 МБ', icon: '🎞️' },
+  
+  { id: 71, name: 'Pidgin', version: '2.10.12', category: 'Общение', description: 'Универсальный мессенджер', size: '15 МБ', icon: '🐦' },
+  { id: 72, name: 'mIRC', version: '7.52', category: 'Общение', description: 'IRC клиент для чатов', size: '2 МБ', icon: '💻' },
+  
+  { id: 73, name: 'Python', version: '3.4.4', category: 'Разработка', description: 'Язык программирования Python', size: '25 МБ', icon: '🐍' },
+  { id: 74, name: 'Node.js', version: '6.17.1', category: 'Разработка', description: 'JavaScript runtime', size: '15 МБ', icon: '🟩' },
+  { id: 75, name: 'Git', version: '2.10.0', category: 'Разработка', description: 'Система контроля версий', size: '32 МБ', icon: '🔀' },
+  { id: 76, name: 'Visual Studio', version: '2010', category: 'Разработка', description: 'IDE от Microsoft', size: '2.5 ГБ', icon: '🔷' },
+  
+  { id: 77, name: 'Virtual DJ', version: '7.4', category: 'Мультимедиа', description: 'DJ микшер', size: '45 МБ', icon: '🎚️' },
+  { id: 78, name: 'Sony Vegas', version: '9.0', category: 'Мультимедиа', description: 'Видеомонтаж', size: '180 МБ', icon: '🎬' },
+  { id: 79, name: 'Camtasia Studio', version: '8.6', category: 'Мультимедиа', description: 'Запись экрана', size: '250 МБ', icon: '📹' },
+  
+  { id: 80, name: 'World of Warcraft', version: '3.3.5a', category: 'Игры', description: 'Легендарная MMORPG', size: '12 ГБ', icon: '🐉' },
 ];
 
-const categories = ['Все', 'Браузеры', 'Мультимедиа', 'Разработка', 'Интернет', 'Утилиты', 'Архиваторы', 'Общение', 'Графика', 'Офис', 'Игры'];
+const categories = ['Все', 'Браузеры', 'Мультимедиа', 'Разработка', 'Интернет', 'Утилиты', 'Архиваторы', 'Общение', 'Графика', 'Офис', 'Игры', 'Файловые менеджеры'];
 
 export default function Index() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -86,6 +128,14 @@ export default function Index() {
     const matchesCategory = selectedCategory === 'Все' || program.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
+
+  const handleDownload = (program: Program) => {
+    if (program.downloadUrl) {
+      window.open(program.downloadUrl, '_blank');
+    } else {
+      alert(`Информация для скачивания ${program.name}:\n\nВерсия: ${program.version}\nРазмер: ${program.size}\n\nДля скачивания программы посетите официальный сайт или используйте поиск в интернете.`);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-xp-desktop">
@@ -99,7 +149,7 @@ export default function Index() {
               <h1 className="text-4xl font-bold text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.3)]">
                 Windows XP Programs
               </h1>
-              <p className="text-xp-blue-light text-lg">Совместимые программы для Windows XP SP3 32-bit</p>
+              <p className="text-xp-blue-light text-lg">Совместимые программы для Windows XP SP3 32-bit • Всего программ: {programs.length}</p>
             </div>
           </div>
 
@@ -177,7 +227,10 @@ export default function Index() {
                   </Badge>
                 </div>
 
-                <button className="w-full py-3 px-4 bg-gradient-to-b from-xp-green to-xp-green-dark text-white font-bold rounded border-2 border-xp-green-dark shadow-xp-button hover:from-xp-green-light hover:to-xp-green transition-all flex items-center justify-center gap-2">
+                <button 
+                  onClick={() => handleDownload(program)}
+                  className="w-full py-3 px-4 bg-gradient-to-b from-xp-green to-xp-green-dark text-white font-bold rounded border-2 border-xp-green-dark shadow-xp-button hover:from-xp-green-light hover:to-xp-green transition-all flex items-center justify-center gap-2 active:scale-95"
+                >
                   <Icon name="Download" size={18} />
                   Скачать
                 </button>
