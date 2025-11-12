@@ -18,18 +18,63 @@ const programs: Program[] = [
   { id: 1, name: 'Mozilla Firefox', version: '3.6.28', category: 'Браузеры', description: 'Последняя версия Firefox для Windows XP', size: '12 МБ', icon: '🦊' },
   { id: 2, name: 'Opera', version: '36.0', category: 'Браузеры', description: 'Быстрый и лёгкий браузер', size: '8 МБ', icon: '🔴' },
   { id: 3, name: 'Chrome', version: '49.0', category: 'Браузеры', description: 'Последняя поддерживаемая версия Chrome', size: '45 МБ', icon: '🌐' },
-  { id: 4, name: 'Winamp', version: '5.666', category: 'Мультимедиа', description: 'Легендарный аудиоплеер', size: '15 МБ', icon: '🎵' },
-  { id: 5, name: 'VLC Media Player', version: '2.0.8', category: 'Мультимедиа', description: 'Универсальный видеоплеер', size: '24 МБ', icon: '🎬' },
-  { id: 6, name: 'AIMP', version: '3.60', category: 'Мультимедиа', description: 'Мощный аудиоплеер', size: '7 МБ', icon: '🎧' },
-  { id: 7, name: 'Notepad++', version: '6.9.2', category: 'Разработка', description: 'Продвинутый текстовый редактор', size: '3 МБ', icon: '📝' },
-  { id: 8, name: 'FileZilla', version: '3.8.1', category: 'Интернет', description: 'FTP-клиент для передачи файлов', size: '6 МБ', icon: '📁' },
-  { id: 9, name: 'CCleaner', version: '5.33', category: 'Утилиты', description: 'Очистка и оптимизация системы', size: '5 МБ', icon: '🧹' },
-  { id: 10, name: 'WinRAR', version: '5.40', category: 'Архиваторы', description: 'Популярный архиватор файлов', size: '2 МБ', icon: '📦' },
-  { id: 11, name: '7-Zip', version: '16.04', category: 'Архиваторы', description: 'Бесплатный архиватор с высокой степенью сжатия', size: '1 МБ', icon: '🗜️' },
-  { id: 12, name: 'Skype', version: '7.40', category: 'Общение', description: 'Видеозвонки и мессенджер', size: '42 МБ', icon: '💬' },
+  { id: 4, name: 'Pale Moon', version: '27.9.4', category: 'Браузеры', description: 'Легкий форк Firefox для старых систем', size: '25 МБ', icon: '🌙' },
+  { id: 5, name: 'Internet Explorer', version: '8.0', category: 'Браузеры', description: 'Встроенный браузер Windows XP', size: '16 МБ', icon: '🔷' },
+  
+  { id: 6, name: 'Winamp', version: '5.666', category: 'Мультимедиа', description: 'Легендарный аудиоплеер', size: '15 МБ', icon: '🎵' },
+  { id: 7, name: 'VLC Media Player', version: '2.0.8', category: 'Мультимедиа', description: 'Универсальный видеоплеер', size: '24 МБ', icon: '🎬' },
+  { id: 8, name: 'AIMP', version: '3.60', category: 'Мультимедиа', description: 'Мощный аудиоплеер', size: '7 МБ', icon: '🎧' },
+  { id: 9, name: 'KMPlayer', version: '3.9.1.137', category: 'Мультимедиа', description: 'Медиаплеер с поддержкой всех форматов', size: '35 МБ', icon: '📺' },
+  { id: 10, name: 'Media Player Classic', version: '1.7.13', category: 'Мультимедиа', description: 'Классический легкий видеоплеер', size: '14 МБ', icon: '▶️' },
+  { id: 11, name: 'Audacity', version: '2.1.3', category: 'Мультимедиа', description: 'Редактор аудио файлов', size: '22 МБ', icon: '🎙️' },
+  
+  { id: 12, name: 'Notepad++', version: '6.9.2', category: 'Разработка', description: 'Продвинутый текстовый редактор', size: '3 МБ', icon: '📝' },
+  { id: 13, name: 'Sublime Text', version: '2.0.2', category: 'Разработка', description: 'Современный редактор кода', size: '8 МБ', icon: '⌨️' },
+  { id: 14, name: 'XAMPP', version: '1.8.3', category: 'Разработка', description: 'Локальный веб-сервер Apache + PHP + MySQL', size: '95 МБ', icon: '🖥️' },
+  { id: 15, name: 'Eclipse', version: '3.8.1', category: 'Разработка', description: 'IDE для Java разработки', size: '180 МБ', icon: '☕' },
+  
+  { id: 16, name: 'FileZilla', version: '3.8.1', category: 'Интернет', description: 'FTP-клиент для передачи файлов', size: '6 МБ', icon: '📁' },
+  { id: 17, name: 'uTorrent', version: '2.2.1', category: 'Интернет', description: 'Компактный торрент-клиент', size: '1 МБ', icon: '🔽' },
+  { id: 18, name: 'Download Master', version: '6.14', category: 'Интернет', description: 'Менеджер загрузок файлов', size: '8 МБ', icon: '⬇️' },
+  { id: 19, name: 'Thunderbird', version: '38.8.0', category: 'Интернет', description: 'Почтовый клиент от Mozilla', size: '28 МБ', icon: '📧' },
+  
+  { id: 20, name: 'CCleaner', version: '5.33', category: 'Утилиты', description: 'Очистка и оптимизация системы', size: '5 МБ', icon: '🧹' },
+  { id: 21, name: 'Recuva', version: '1.53', category: 'Утилиты', description: 'Восстановление удаленных файлов', size: '4 МБ', icon: '🔄' },
+  { id: 22, name: 'Defraggler', version: '2.21', category: 'Утилиты', description: 'Дефрагментация жесткого диска', size: '5 МБ', icon: '💾' },
+  { id: 23, name: 'TeamViewer', version: '11.0', category: 'Утилиты', description: 'Удаленный доступ к компьютеру', size: '15 МБ', icon: '🖱️' },
+  { id: 24, name: 'Daemon Tools Lite', version: '4.49.1', category: 'Утилиты', description: 'Монтирование виртуальных дисков', size: '18 МБ', icon: '💿' },
+  
+  { id: 25, name: 'WinRAR', version: '5.40', category: 'Архиваторы', description: 'Популярный архиватор файлов', size: '2 МБ', icon: '📦' },
+  { id: 26, name: '7-Zip', version: '16.04', category: 'Архиваторы', description: 'Бесплатный архиватор с высокой степенью сжатия', size: '1 МБ', icon: '🗜️' },
+  
+  { id: 27, name: 'Skype', version: '7.40', category: 'Общение', description: 'Видеозвонки и мессенджер', size: '42 МБ', icon: '💬' },
+  { id: 28, name: 'ICQ', version: '8.2', category: 'Общение', description: 'Классический мессенджер', size: '25 МБ', icon: '🌺' },
+  { id: 29, name: 'QIP', version: '2012', category: 'Общение', description: 'Российский мессенджер для ICQ', size: '12 МБ', icon: '💭' },
+  { id: 30, name: 'Miranda IM', version: '0.10.78', category: 'Общение', description: 'Мультипротокольный мессенджер', size: '3 МБ', icon: '🗨️' },
+  
+  { id: 31, name: 'Adobe Photoshop', version: 'CS2', category: 'Графика', description: 'Профессиональный редактор изображений', size: '320 МБ', icon: '🎨' },
+  { id: 32, name: 'GIMP', version: '2.8.22', category: 'Графика', description: 'Бесплатный аналог Photoshop', size: '85 МБ', icon: '🖌️' },
+  { id: 33, name: 'Paint.NET', version: '3.5.11', category: 'Графика', description: 'Простой редактор изображений', size: '6 МБ', icon: '🎭' },
+  { id: 34, name: 'IrfanView', version: '4.54', category: 'Графика', description: 'Быстрый просмотрщик изображений', size: '2 МБ', icon: '🖼️' },
+  
+  { id: 35, name: 'Microsoft Office', version: '2007', category: 'Офис', description: 'Пакет офисных приложений', size: '600 МБ', icon: '📊' },
+  { id: 36, name: 'LibreOffice', version: '5.2.7', category: 'Офис', description: 'Бесплатный офисный пакет', size: '220 МБ', icon: '📄' },
+  { id: 37, name: 'Adobe Reader', version: '11.0', category: 'Офис', description: 'Просмотр PDF документов', size: '52 МБ', icon: '📕' },
+  { id: 38, name: 'Foxit Reader', version: '7.3', category: 'Офис', description: 'Легкий PDF-ридер', size: '38 МБ', icon: '📘' },
+  
+  { id: 39, name: 'Counter-Strike 1.6', version: '1.6', category: 'Игры', description: 'Легендарный шутер от первого лица', size: '300 МБ', icon: '🔫' },
+  { id: 40, name: 'Heroes 3', version: 'Complete', category: 'Игры', description: 'Пошаговая стратегия в мире магии', size: '1.2 ГБ', icon: '⚔️' },
+  { id: 41, name: 'GTA San Andreas', version: '1.0', category: 'Игры', description: 'Культовая игра в открытом мире', size: '4.7 ГБ', icon: '🚗' },
+  { id: 42, name: 'Warcraft III', version: '1.27', category: 'Игры', description: 'Стратегия в реальном времени', size: '1.3 ГБ', icon: '🏰' },
+  { id: 43, name: 'The Sims 2', version: 'Complete', category: 'Игры', description: 'Симулятор жизни', size: '5.5 ГБ', icon: '🏡' },
+  { id: 44, name: 'NFS Most Wanted', version: '2005', category: 'Игры', description: 'Лучшая часть серии гонок', size: '3.5 ГБ', icon: '🏎️' },
+  { id: 45, name: 'Half-Life 2', version: '1.0', category: 'Игры', description: 'Революционный шутер', size: '4.5 ГБ', icon: '👽' },
+  { id: 46, name: 'Diablo 2', version: '1.14d', category: 'Игры', description: 'Классическая hack and slash', size: '2.5 ГБ', icon: '⚡' },
+  { id: 47, name: 'Age of Empires II', version: 'HD', category: 'Игры', description: 'Историческая стратегия', size: '700 МБ', icon: '🏛️' },
+  { id: 48, name: 'Minecraft', version: '1.5.2', category: 'Игры', description: 'Песочница с кубическим миром', size: '150 МБ', icon: '⛏️' },
 ];
 
-const categories = ['Все', 'Браузеры', 'Мультимедиа', 'Разработка', 'Интернет', 'Утилиты', 'Архиваторы', 'Общение'];
+const categories = ['Все', 'Браузеры', 'Мультимедиа', 'Разработка', 'Интернет', 'Утилиты', 'Архиваторы', 'Общение', 'Графика', 'Офис', 'Игры'];
 
 export default function Index() {
   const [searchQuery, setSearchQuery] = useState('');
