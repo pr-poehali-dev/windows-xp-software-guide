@@ -61,12 +61,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'xp-blue': '#0054E3',
+				'xp-blue-dark': '#003DA3',
+				'xp-blue-light': '#A8D0FF',
+				'xp-green': '#5EAC24',
+				'xp-green-dark': '#4A8B1D',
+				'xp-green-light': '#7BC542',
+				'xp-gray': '#ECE9D8',
+				'xp-gray-dark': '#D4D0C8',
+				'xp-gray-light': '#F4F2E8',
+				'xp-border': '#ACA899',
+				'xp-text': '#000000',
+				'xp-text-dark': '#333333',
+				'xp-text-muted': '#666666',
+				'xp-desktop': '#5A86C5'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'xp': '2px 2px 4px rgba(0, 0, 0, 0.2)',
+				'xp-hover': '3px 3px 6px rgba(0, 0, 0, 0.3)',
+				'xp-inset': 'inset 1px 1px 2px rgba(0, 0, 0, 0.1)',
+				'xp-button': '1px 1px 2px rgba(0, 0, 0, 0.15), inset -1px -1px 2px rgba(0, 0, 0, 0.1)'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -89,6 +109,9 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'tahoma': ['Tahoma', 'Verdana', 'sans-serif']
 			}
 		}
 	},
